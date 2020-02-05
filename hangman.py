@@ -118,20 +118,4 @@ def start():
     word = random.choice(all_words)
     play(word)
 
-##Tests
-    
-check.set_input(["l","i","s","t"])
-check.set_screen(["The word takes in 4 user inputs and ends the game!"])
-check.expect("Q3T1",play("list"),None)
 
-check.set_input(["bye"])
-check.set_screen(["The user exits at the first go"])
-check.expect("Q3T2",play("programming"),None)
-
-check.set_input(["l","o","i","s","t"])
-check.set_screen(["The word takes in 5 user inputs and ends the game!"])
-check.expect("Q3T3",play("list"),None)
-
-check.set_input(["l","o","o","p","s"])
-check.set_screen(["the user guesses the word with one bad guess and wins!"])
-check.expect("Q3T4",play("loops"),None)
